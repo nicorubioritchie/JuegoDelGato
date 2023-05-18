@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Itim';
+    cursor: url("./botella.png"), auto;
   }
   nav {
     background-color: black;
