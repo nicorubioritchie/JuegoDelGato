@@ -4,6 +4,10 @@
     font-family: 'Itim';
     cursor: url("./botella.png"), auto;
   }
+  h1{
+    color: #333;
+    text-align: center;
+  }
   nav {
     background-color: black;
   }
@@ -157,18 +161,20 @@
     height: 100vh;
     width: 100vw;
     transition: all .5s;
-    display: block;
-}
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center;
+  }
 #modal p {
-    width: 60%;
-    height: 40%;
-    position: top;
-    top: 0;
+    width: 80%;
+    height: 5%;
+    position: relative;
+    top: 5%;
     right: 0;
     bottom: 0;
-    margin: auto;
-    font-size: 1.5em;
-    text-align: center;
+    margin: 10px 0;
+    font-size: 1.5em;   
+    text-align:left; 
 }
 
 #mostrar-modal +label:hover {

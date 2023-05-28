@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Más información</title>
+    <title>Ajustes</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./botella.png">
     <script src="./index.js"></script>
@@ -14,7 +14,7 @@
     <ul>
       <li><a href="./index.html">Inicio</a></li>
       <li><a href="./3EnRaya.html">Juega conmigo!</a></li>
-      <li><a href="./pag2.html">Más información</a></li>
+      <li><a href="./pag2.html">Ajustes</a></li>      
       <li class="modal-link">
         <label for="mostrar-modal">Abrir Modal</label>
       </li>
@@ -22,20 +22,34 @@
       
     </ul>
 </nav>
- 
 <input id="mostrar-modal" name="modal" type="radio"/>
-<label for="mostrar-modal"></label>
+    <label for="mostrar-modal"></label>
+   
+    <div id="modal">
+      <p> Nombre: Nicolás Rubio Ritchie.</p>
+      <p>Curso: 1° DAM.</p>
+      <input id="cerrar-modal" name="modal" type="radio"/>
+        <label for="cerrar-modal">X</label>
+    </div>
+ 
+<section id="ajustes">
+  <p id="esteParrafo">Elija un color</p>
+  <input type="color" name="colorElegido">
 
-<div id="modal">
-    <p>Ajustes</p>
-    <button id="bdark">
-           Día / Noche
-    </button> 
-    <input id="cerrar-modal" name="modal" type="radio"/>
-    <label for="cerrar-modal">X</label>
+  <select name="tamFuente">
+      <option value="12">Pequeña</option>
+      <option value="14" selected="selected">Mediana</option>
+      <option value="18">Grande</option>
+      <option value="28">Gigante</option>
+  </select>
+
+  <button value="Pinche acá para ajustes" onclick="aplicarCambios()"> APLICAR </button>
+
+  <H2>GUÍA DE ESTUDIO ELEGIDA</H2>
+  <h1> TITULO H1</h1>
+  <H2> TITULO H2</H2>
+  <H3> TITULO H3</H3>
+</section>
 </div>
-    <h1>
-        Información principal del creador de este sitio web.
-    </h1>
 </body>
 </html>
