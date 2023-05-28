@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./GatoICONO.png">
     <script src="./script.js"></script>
     <title>3 en raya</title>
 </head>
@@ -12,9 +13,22 @@
         <ul>
           <li><a href="./index.html">Inicio</a></li>
           <li><a href="./3EnRaya.html">Juega conmigo!</a></li>
-          <li><a href="./pag2.html">Más información</a></li>
+          <li class="modal-link">
+            <label for="mostrar-modal">Abrir Modal</label>
+          </li>
+          
+          
         </ul>
-  </nav>
+    </nav>
+     
+    <input id="mostrar-modal" name="modal" type="radio"/>
+    <label for="mostrar-modal"></label>
+   
+    <div id="modal">
+        <p>Lorem ipsuquisquam alias et aspernatur amet? Explicabo saepe mollitia tempora aperiam, beatae id fugiat. Iusto nisi aut quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perspiciatis debitis quidem! Eos eum et culpa autem libero minima cumque, iure soluta officiis, exercitationem voluptatem temporibus, voluptatum doloribus inventore! Repellendus.</p>
+        <input id="cerrar-modal" name="modal" type="radio"/>
+        <label for="cerrar-modal">X</label>
+    </div>
     <main class="background">
         <section class="title">
             <h1>3 en Raya</h1>
@@ -38,5 +52,6 @@
             <button id="reset">Jugar otra vez!</button>
         </section>
     </main>
+
 </body>
 </html>

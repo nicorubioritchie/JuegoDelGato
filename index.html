@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Principal</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./estiloPrincipal.css">
+    <link rel="icon" href="./CopaDeVinoICONO.png">
+    <link rel="stylesheet" href="./index.js">
 </head>
 <body>
 
@@ -13,11 +15,76 @@
         <ul>
           <li><a href="./index.html">Inicio</a></li>
           <li><a href="./3EnRaya.html">Juega conmigo!</a></li>
-          <li><a href="./pag2.html">Más información</a></li>
+          <li class="modal-link">
+            <label for="mostrar-modal">Abrir Modal</label>
+          </li>
+          
+          
         </ul>
     </nav>
-    <h1>
-        HOLA MUNDO !!!
-    </h1>
+     
+    <input id="mostrar-modal" name="modal" type="radio"/>
+    <label for="mostrar-modal"></label>
+   
+    <div id="modal">
+        <p>Lorem ipsuquisquam alias et aspernatur amet? Explicabo saepe mollitia tempora aperiam, beatae id fugiat. Iusto nisi aut quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perspiciatis debitis quidem! Eos eum et culpa autem libero minima cumque, iure soluta officiis, exercitationem voluptatem temporibus, voluptatum doloribus inventore! Repellendus.</p>
+        <input id="cerrar-modal" name="modal" type="radio"/>
+        <label for="cerrar-modal">X</label>
+    </div>
+
+<div class="cajaPrincipal">
+    <button class="cajaChile" onclick="mostrarSeccion('seccion1')">
+        <h3>Vinos de Chile</h3>
+    </button>
+    <button class="cajaArgentina" onclick="mostrarSeccion('seccion2')">
+        <h3>Vinos de Argentina</h3>
+    </button>
+    <button class="cajaPeru" onclick="mostrarSeccion('seccion3')">
+        <h3>Vinos de Perú</h3>
+    </button>
+    <button class="cajaUruguay" onclick="mostrarSeccion('seccion4')">
+        <h3>Vinos de Uruguay</h3>
+    </button>
+</div>
+<section id="seccion1" class="seccion"> 
+   <h1>HOLAAAAAAAAAAAAAAAAAAAAAAAA</h1>
+   <div class="image-container" id="imageContainer">
+   <img class="imagenVino" src="./CruzAndina.jpg"></img>
+   <img class="imagenVino" src="./casilleroDelDiablo.jpg"></img>
+   <img class="imagenVino" src="./LosVascos.jpg"></img>
+   <img class="imagenVino" src="./SolDeChile.jpg"></img>
+   <img class="imagenVino" src="./GatoNegroChile.jpg"></img>
+  </div>
+  </section>
+  <section id="seccion2" class="seccion">
+    <H1>QUE PASAAAAAAAAAAAAAAAAAAAA</H1>
+    <div class="image-container" id="imageContainer">
+      <img class="imagenVino" src="./Septima.jpg"></img>
+      <img class="imagenVino" src="./Catena.jpg"></img>
+      <img class="imagenVino" src="./Zuccardi.jpg"></img>
+      <img class="imagenVino" src="./Iluminado.jpg"></img>
+      <img class="imagenVino" src="./Nicasia.jpg"></img>
+     </div>
+  </section>
+  <section id="seccion3" class="seccion">
+    <H1>5 PESOS POR EL GORDITOOOOO</H1>
+  </section>
+  <section id="seccion4" class="seccion">
+    <H1> URUGUAAAY NOMAAAAAAAAA</H1>
+  </section>
+  
+<script>
+
+  function mostrarSeccion(id) {
+  var seccion = document.getElementById(id);
+  var secciones = document.getElementsByClassName('seccion');
+
+  for (var i = 0; i < secciones.length; i++) {
+    secciones[i].classList.remove('mostrando');
+  }
+
+  seccion.classList.add('mostrando');
+}
+</script>
 </body>
 </html>

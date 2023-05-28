@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Itim';
+    cursor: url("./botella.png"), auto;
+  }
+  nav {
+    background-color: black;
+  }
+  
+  nav ul {
+    
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    margin: 0 30px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+  }
+  p{
+    top: 0;
+    color: black;
+  }
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  nav ul li label:hover {
+    background-color: #555;
+  }
+  nav ul li label {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+  }
+  .nav-modal {
+    display: inline-block;
+    position: relative;
+  }
+  .nav-modal:hover .modal {
+    display: block;
+  }
+  
+  .cajaPrincipal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cajaChile {
+    flex-direction: column;
+    justify-content: flex-end;
+    display: flex;
+    width: 400px;
+    height: 200px;
+    background-image: url('./viñaChile.jpg');
+    background-size: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Otros estilos del botón */
+    text-align: center;    
+    padding: 10px 20px;
+    font-size: 40px;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 15px;
+  }
+  .cajaArgentina {
+    flex-direction: column;
+    justify-content: flex-end;
+    display: flex;
+    width: 400px;
+    height:200px;
+    background-image: url('./viñaArgentina.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Otros estilos del botón */
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 40px;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 15px;
+  }
+  .cajaPeru {
+    flex-direction: column;
+    justify-content: flex-end;
+    display: flex;
+    width: 400px;
+    height: 200px;
+    background-image: url('./viñaPeru.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Otros estilos del botón */
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 40px;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 15px;
+  }
+  .cajaUruguay {
+    flex-direction: column;
+    justify-content: flex-end;
+    display: flex;
+    width: 400px;
+    height: 200px;
+    background-image: url('./viñaUruguay.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Otros estilos del botón */
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 40px;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 15px;
+  }
+
+  body.darkmode {
+    background-color: black;
+    color: white;
+  }
+  #bdark{
+    margin-top: 50px;
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 10px;
+    color: #3f3838;
+    background-color: gray;
+    border-radius: 15px;
+  }
+  .seccion {
+    display: none;
+  }
+  .seccion.mostrando {
+    display: block;
+  }
+  #modal {
+    position:fixed;
+    background: rgba(100, 99, 104, 0.637);
+    color: rgba(12, 14, 12, 0.589);
+    top: -100vh;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: all .5s;
+    display: block;
+}
+#modal p {
+    width: 60%;
+    height: 40%;
+    position: top;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#mostrar-modal +label:hover {
+    display: block;
+    padding: 10px 15px;
+}
+#mostrar-modal:checked ~ #modal {
+    left: 0px;
+    top: 0;
+    width: 30%; 
+    height: 60%; 
+    overflow: auto; 
+    background-color: rgba(110, 104, 104, 0.918);
+    border-radius: 10%; 
+    border: solid;
+}
+#cerrar-modal {
+    display: none;
+}
+#cerrar-modal + label{
+    position:absolute;
+    top: 1em;
+    right: 1em;
+    z-index: 100;
+    color: #0a0a0a;
+    font-weight: bold;
+    cursor: pointer;
+    background: gray;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all .5s;
+}
+#cerrar-modal:checked + label{
+    display: none;
+}
+.imagenVino{
+  width: 300px;
+  height: 300px;
+
+}
+

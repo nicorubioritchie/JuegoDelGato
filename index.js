@@ -7,3 +7,8 @@ var mensaje = "Nombre del alumno: " + nombreAlumno + "\n" +
               "Tema elegido de Proyecto Final: " + temaProyecto;
 
 alert(mensaje);
+
+function mostrarImagenes() {
+    var imageContainer = document.getElementById("imageContainer");
+    imageContainer.style.display = "block";
+  }
