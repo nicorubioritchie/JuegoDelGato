@@ -218,4 +218,16 @@
   height: 300px;
 
 }
+#username-container {
+  position: fixed;
+  top: 10px; /* Ajusta la posición vertical */
+  right: 10px; /* Ajusta la posición horizontal */
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 9999; /* Asegura que el elemento esté en la parte superior */
+}
 
+#username {
+  font-weight: bold;
+}

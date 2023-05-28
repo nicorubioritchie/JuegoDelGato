@@ -122,3 +122,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
     resetButton.addEventListener('click', resetBoard);
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    var usernameElement = document.getElementById("username");
+    var usernameInput = document.getElementById("username-input");
+    var saveButton = document.getElementById("username-button");
+  
+    saveButton.addEventListener("click", function() {
+      var username = usernameInput.value;
+      usernameElement.innerText = username;
+    });
+  });
